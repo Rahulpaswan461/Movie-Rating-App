@@ -1,5 +1,5 @@
 .posterImage{
-    height: 600px;
+    height: 500px;
 }
 
 .posterImage > img {
@@ -50,4 +50,52 @@
     display: flex;
     text-align: left;
     width: 50%;
+}
+
+@media screen and (max-width:992px){
+    .posterImage{
+        display: inline;
+        width: 70%;
+        margin-top: 2rem;
+    }
+    .poster{
+        top:3rem;
+    }
+    .posterImage__title{
+        font-size: 2rem;
+        position:absolute;
+        top:-20px;
+    }
+    .posterImage__runtime{
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .posterImage__description{
+        font-size: 12px;
+        margin-top:2rem;
+    }
+    
+}
+@media screen and (max-width:770px) {
+       .posterImage__title{
+          top:-50px;
+       }
+}
+@media screen and (max-width:395px){
+           .posterImage__title{
+             font-size: 1.8rem;
+             display: flex;
+             align-items: center;
+             flex-direction: column;
+             position: absolute;
+             top:-3rem;
+
+           }
+           .posterImage__runtime{
+            margin-top: 1rem;
+           }
+           .posterImage__description{
+            display: none;
+           }
+
 }

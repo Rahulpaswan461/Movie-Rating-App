@@ -15,7 +15,7 @@ function App() {
               <Route path="/search/:key" element={<Search/>}></Route>
               <Route path="movie/:id" element={<Movie/>}></Route>
               <Route path="movies/:type" element={<MovieList/>}></Route>
-              <Route path="/*" element={<h1>Error page</h1>}></Route>
+              <Route path="/*" element={<h3>Something Went Wrong ! Go to home</h3>}></Route>
         </Routes>
       </Router>
     </div>

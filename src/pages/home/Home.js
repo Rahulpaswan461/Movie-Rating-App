@@ -36,7 +36,7 @@ const Home = () => {
                                     src={`https://image.tmdb.org/t/p/original${movie &&
                                         movie.backdrop_path}`}
                                     alt={movie.original_title}
-                                    style={{ width: "100%", height: "95%", objectFit: "cover" }}
+                                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                 />
                             </div>
                             <div className="posterImage__overlay">
@@ -54,7 +54,7 @@ const Home = () => {
                                     {movie ? movie.overview : ""}
                                 </div>
                             </div>
-                        </Link>
+                        </Link> 
                     ))}
                 </Carousel>
                 <MovieList/>

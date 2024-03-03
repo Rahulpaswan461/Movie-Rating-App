@@ -60,3 +60,16 @@
     font-size: .75rem;
     margin-bottom: 0.25rem;
 }
+@media screen and (max-width:395px){
+     .cards{
+        display: block;
+        width: 300px;
+        height: 200px;
+     }
+     .cards__img{
+        object-fit: contain;
+     }
+     .cards:hover{
+        z-index: 10000;
+     }
+}
